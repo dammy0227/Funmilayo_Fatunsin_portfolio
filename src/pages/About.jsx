@@ -56,7 +56,7 @@ const About = () => {
           </p>
 
           {/* ✅ View Certificate Button */}
-          <a href='"/assets/projects/certificate.pdf",'
+          <a href="/assets/projects/certificate.pdf"
           download
           className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-xl font-semibold hover:bg-purple-700 transition">
             <FaCertificate className="text-white" />
