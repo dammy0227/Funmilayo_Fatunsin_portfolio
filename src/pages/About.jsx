@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import img from '../assets/profile.jpeg';
-import certificatePdf from '../assets/certificate.pdf'; 
+
 
 const About = () => {
   const skills = [
@@ -57,15 +57,14 @@ const About = () => {
           </p>
 
           {/* ✅ View Certificate Button */}
-          <motion.a
-            href={certificatePdf}
-            download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-xl font-semibold hover:bg-purple-700 transition"
-          >
-            <FaCertificate className="text-white" />
-            View Certificate
-          </motion.a>
-        </motion.div>
+         <a
+         href={certificatePdf}
+         download
+         className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white
+          rounded-xl font-semibold hover:bg-purple-700 transition">
+          <FaCertificate className="text-white" />View Certificate
+          </a>
+
 
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* LEFT: Profile Image & Badges */}
