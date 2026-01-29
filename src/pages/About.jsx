@@ -6,12 +6,11 @@ import {
   FaCheckCircle,
   FaUserTie,
   FaCertificate,
-  FaStar,
-  FaEnvelope,
-  FaArrowRight
+  FaStar
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import img from '../assets/profile.jpeg'
+import img from '../assets/profile.jpeg';
+import certificatePdf from '../assets/certifcate.pdf'; 
 
 const About = () => {
   const skills = [
@@ -53,9 +52,22 @@ const About = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             About <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-600 to-pink-600">Rebecca</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-4">
             Professional Virtual Assistant dedicated to making your work life easier and more productive
           </p>
+
+          {/* ✅ View Certificate Button */}
+          <motion.a
+            href={certificatePdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-xl font-semibold hover:bg-purple-700 transition"
+          >
+            <FaCertificate className="text-white" />
+            View Certificate
+          </motion.a>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -133,11 +145,11 @@ const About = () => {
                 Hello! I'm <span className="text-purple-600">Fatunsin Funmilayo Rebecca</span>
               </h3>
               <p className="text-gray-700 text-md  leading-relaxed mb-6">
-              As a highly organized Virtual and Executive Assistant, I provide seamless administrative support to 
-              busy professionals and executive teams. Skilled in time management, communication, and problem-solving,
-              I streamline operations, manage schedules, and handle tasks with precision. Experienced in remote
-              and in-office settings, I bring discretion, tech-savviness, and a proactive approach to every task. 
-              I help leaders stay organized, productive, and ahead of schedule.
+                As a highly organized Virtual and Executive Assistant, I provide seamless administrative support to 
+                busy professionals and executive teams. Skilled in time management, communication, and problem-solving,
+                I streamline operations, manage schedules, and handle tasks with precision. Experienced in remote
+                and in-office settings, I bring discretion, tech-savviness, and a proactive approach to every task. 
+                I help leaders stay organized, productive, and ahead of schedule.
               </p>
             </div>
 
